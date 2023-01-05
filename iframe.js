@@ -1,6 +1,6 @@
 import { _ as _decorate, s, i, e, y, a as e$1 } from './query-assigned-elements-14717414.js';
 
-let ZwcIframe = _decorate([e$1('ranjit-capitalandplugin')], function (_initialize, _LitElement) {
+let ZwcIframe = _decorate([e$1('zwc-iframe')], function (_initialize, _LitElement) {
   class ZwcIframe extends _LitElement {
     constructor(...args) {
       super(...args);
@@ -81,7 +81,7 @@ let ZwcIframe = _decorate([e$1('ranjit-capitalandplugin')], function (_initializ
       function getMetaConfig() {
         // plugin contract information
         return {
-          controlName: 'ranjit-capitalandplugin',
+          controlName: 'IFrame-new',
           fallbackDisableSubmit: false,
           description: 'IFrame component which can render url view with the frame',
           iconUrl: 'one-line-text',
