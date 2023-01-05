@@ -120,7 +120,7 @@ let ZwcIframe = _decorate([e$1('ranjit-capitalandplugin')], function (_initializ
         ({
           height: this.height + 'px'
         });
-        return y`<table><tr><td>test</td></tr></table>`;
+        return y`<table><tr><td style="border:1px solid black">test</td></tr></table>`;
       }
     }]
   };
