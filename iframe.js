@@ -120,7 +120,7 @@ let ZwcIframe = _decorate([e$1('apac-iframe')], function (_initialize, _LitEleme
         ({
           height: this.height + 'px'
         });
-        return y`<p>Hello World !</p>${this.name}`;
+        return y`<table><tr><td>test</td></tr></table>`;
       }
     }]
   };
