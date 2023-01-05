@@ -1,6 +1,6 @@
 import { _ as _decorate, s, i, e, y, a as e$1 } from './query-assigned-elements-14717414.js';
 
-let ZwcIframe = _decorate([e$1('zwc-iframe')], function (_initialize, _LitElement) {
+let ZwcIframe = _decorate([e$1('apac-iframe')], function (_initialize, _LitElement) {
   class ZwcIframe extends _LitElement {
     constructor(...args) {
       super(...args);
@@ -81,7 +81,7 @@ let ZwcIframe = _decorate([e$1('zwc-iframe')], function (_initialize, _LitElemen
       function getMetaConfig() {
         // plugin contract information
         return {
-          controlName: 'IFrame-new',
+          controlName: 'apac-formplugin',
           fallbackDisableSubmit: false,
           description: 'IFrame component which can render url view with the frame',
           iconUrl: 'one-line-text',
@@ -120,7 +120,7 @@ let ZwcIframe = _decorate([e$1('zwc-iframe')], function (_initialize, _LitElemen
         ({
           height: this.height + 'px'
         });
-        return y`<table><tr><td>test</td></tr></table>`;
+        return y`<p>Hello World !</p>${this.name}`;
       }
     }]
   };
