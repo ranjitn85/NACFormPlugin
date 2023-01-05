@@ -81,7 +81,7 @@ let ZwcIframe = _decorate([e$1('apac-iframe')], function (_initialize, _LitEleme
       function getMetaConfig() {
         // plugin contract information
         return {
-          controlName: 'IFrame-new',
+          controlName: 'apac-formplugin',
           fallbackDisableSubmit: false,
           description: 'IFrame component which can render url view with the frame',
           iconUrl: 'one-line-text',
