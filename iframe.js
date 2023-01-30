@@ -1,5 +1,36 @@
 import { _ as _decorate, s, i, e, y, a as e$1 } from './query-assigned-elements-14717414.js';
 
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */console.warn("The main 'lit-element' module entrypoint is deprecated. Please update your imports to use the 'lit' package: 'lit' and 'lit/decorators.ts' or import from 'lit-element/lit-element.ts'. See https://lit.dev/msg/deprecated-import-path for more information.");
+
+function tagforJquery() {
+  const tagforJquery = document.createElement('script');
+  tagforJquery.src = 'https://code.jquery.com/jquery-3.5.1.js';
+  tagforJquery.async = false; //tag.innerHTML = `alert('foo')`;
+
+  return tagforJquery;
+}
+
+function tagfordatatable() {
+  const tagfordatatable = document.createElement('script');
+  tagfordatatable.src = 'https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js';
+  tagfordatatable.async = false; //tag.innerHTML = `alert('foo')`;
+
+  return tagfordatatable;
+}
+
+function tagforcss() {
+  const head = document.getElementsByTagName('head')[0];
+  const style = document.createElement('link');
+  style.type = 'text/css';
+  style.href = 'https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css';
+  style.rel = 'stylesheet';
+  head.appendChild(style);
+}
+
 let ZwcIframe = _decorate([e$1('ranjit-capitalandplugin')], function (_initialize, _LitElement) {
   class ZwcIframe extends _LitElement {
     constructor(...args) {
@@ -24,7 +55,6 @@ let ZwcIframe = _decorate([e$1('ranjit-capitalandplugin')], function (_initializ
       width: 100%;
       display: block;
     }
-
     .frame {
       display: inline-block;
       height: 100%;
@@ -131,19 +161,13 @@ let ZwcIframe = _decorate([e$1('ranjit-capitalandplugin')], function (_initializ
           height: this.height + 'px'
         });
         return y`
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-    <script>
-    alert("123");
-    $(document).ready(function () {
-        $('#example').DataTable();
-    });
-    </script>
+    ${tagforJquery()}    
+    ${tagfordatatable()} 
+    ${tagforcss()}
     <table id="example" class="display" style="width:100%">
     <thead>
         <tr>
-            <th>Name</th>
+            <th></th>
             <th>Position</th>
             <th>Office</th>
             <th>Age</th>
